@@ -48,14 +48,31 @@ nav li a:hover{
     margin-right: 1rem;
     font-weight: lighter;
 }
+#offers{
+    /* background-image: url("../assets/ddddd.jpg");
+    background-color: #8d0f0f;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(rgba(60, 60, 60, 0.5), rgba(55, 51, 51, 0.5)), url("../assets/ddddd.jpg");
+    background-position: center top;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem 0.5rem 2rem;
+    color: white;
 
+}
+#offers h1{
+    margin-bottom: 0.5rem;
+    font-size: 2.4rem;
+}
 section {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 2rem 0rem 0rem 0rem;
 }
 article {
     padding: 1rem;
-    flex: 1;
     background-color:#f4e5d6;
     border-radius: 2rem;
     margin: 1rem 1.7rem 1.7rem 0rem;
@@ -67,12 +84,17 @@ article:hover {
 }
 article h1 {
     font-size: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
     font-weight: bold;
 }
 
 footer {
     margin-top: 1rem;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 footer:hover{
     margin-top: 1rem;
@@ -81,7 +103,6 @@ footer:hover{
 footer div {
     flex: 1;
     font-size: 1.4rem;
-    align-self: center;
 }
 #footerimg1{
     display: block;
@@ -99,7 +120,9 @@ footer div {
 footer:hover #footerimg2{
     opacity: 1;
 }
-
+footer:hover #copyright{
+    color: #d5c534;
+}
 #headerimg1{
     z-index: -1;
 }
